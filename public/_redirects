@@ -1,0 +1,4 @@
+/*    /index.html   200
+
+# Redirect default Netlify subdomain to primary domain
+https://tidey.netlify.app/* https://www.tidey.work/:splat 301!

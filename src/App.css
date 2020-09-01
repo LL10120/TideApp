@@ -1,38 +1,67 @@
-.App {
+.container {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.App-contents h1 {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: calc(10px + 3.5vmin);
+}
+
+/* map */
+.map-content {
+  width: 90%;
+  height: 70vh;
+  max-width: 900px;
+  max-height: 80vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.map-content p {
   text-align: center;
+  margin: 0;
+  font-size: calc(5px + 2vmin);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* home */
+.title-content {
+  width: 100%;
+  height: 80vh;
+  margin-bottom: 20vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  animation-name: fadein;
+  animation-duration: 1s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadein {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(5vh);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* 404, err, loading */
+.simple-content {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
